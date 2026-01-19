@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nama Kamu — Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio web developer: proyek, layanan, dan cara kerja."/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a class="brand" href="#home">NamaKamu<span class="dot">.</span></a>
+
+      <button class="nav-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" data-nav>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="cta-li"><a class="btn btn-primary" href="#contact">Let’s Talk</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="hero">
+    <!-- Background animasi: ganti sesuai file kamu -->
+    <div class="hero-bg" aria-hidden="true">
+      <img 
+        src="assets/hero-bg.gif" 
+        alt="" 
+        class="hero-gif" 
+        aria-hidden="true"
+       />
+
+      <div class="hero-overlay"></div>
+    </div>
+
+    <section class="hero-content">
+      <p class="kicker">Web Developer • UI Engineer • Performance-minded</p>
+      <h1>
+        Bangun website yang <span class="grad">cepat</span>, <span class="grad">rapi</span>,
+        dan siap scale.
+      </h1>
+      <p class="sub">
+        Saya membantu bisnis dan personal brand mengubah ide jadi produk web modern:
+        clean UI, high performance, dan user experience yang “klik”.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#work">View Work</a>
+        <a class="btn btn-ghost" href="assets/CV-NamaKamu.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+
+      <div class="hero-metrics">
+        <div class="metric">
+          <div class="metric-num">10+</div>
+          <div class="metric-label">Projects shipped</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">90+</div>
+          <div class="metric-label">Lighthouse score</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">2–6x</div>
+          <div class="metric-label">Faster load (typical)</div>
+        </div>
+      </div>
+    </section>
+
+    <a class="scroll-hint" href="#work" aria-label="Scroll to work">Scroll</a>
+  </main>
+
+  <!-- WORK -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Selected Work</h2>
+        <p>Case study ringkas: impact, kontribusi, dan stack.</p>
+      </div>
+
+      <div class="grid work-grid">
+        <article class="card">
+          <div class="card-top">
+            <h3>Project A — Landing Page High Conversion</h3>
+            <p class="muted">Role: Full-stack • Stack: Next.js, Tailwind, Vercel</p>
+          </div>
+          <ul class="bullets">
+            <li>Improve performance & SEO (Core Web Vitals ready).</li>
+            <li>Conversion-focused layout + analytics events.</li>
+            <li>CMS-ready untuk scaling konten.</li>
+          </ul>
+          <div class="card-actions">
+            <a class="link" href="#" target="_blank" rel="noopener">Live ↗</a>
+            <a class="link" href="#" target="_blank" rel="noopener">Case Study ↗</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Project B — Dashboard Internal Tools</h3>
+            <p class="muted">Role: Frontend • Stack: React, Charting, REST API</p>
+          </div>
+          <ul class="bullets">
+            <li>Design system mini untuk konsistensi UI.</li>
+            <li>State management yang predictable.</li>
+            <li>Performance tuning untuk data besar.</li>
+          </ul>
+          <div class="card-actions">
+            <a class="link" href="#" target="_blank" rel="noopener">Demo ↗</a>
+            <a class="link" href="#" target="_blank" rel="noopener">Repo ↗</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Project C — Company Profile + CMS</h3>
+            <p class="muted">Role: Full-stack • Stack: Astro/Next, Headless CMS</p>
+          </div>
+          <ul class="bullets">
+            <li>Editor-friendly content workflow.</li>
+            <li>SEO + schema markup.</li>
+            <li>Deploy pipeline yang rapi.</li>
+          </ul>
+          <div class="card-actions">
+            <a class="link" href="#" target="_blank" rel="noopener">Live ↗</a>
+            <a class="link" href="#" target="_blank" rel="noopener">Details ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>End-to-end delivery: dari discovery sampai launch dan iterasi.</p>
+      </div>
+
+      <div class="grid service-grid">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p class="muted">Landing page, company profile, web app.</p>
+          <p>Arsitektur rapi, reusable components, dan maintainable codebase.</p>
+        </div>
+        <div class="card">
+          <h3>UI Engineering</h3>
+          <p class="muted">Design-to-code pixel-precise.</p>
+          <p>Design system ringan, konsistensi, dan pengalaman pengguna yang mulus.</p>
+        </div>
+        <div class="card">
+          <h3>Performance & SEO Tech</h3>
+          <p class="muted">Fast load, measurable results.</p>
+          <p>Core Web Vitals, best practices, dan tracking untuk continuous improvement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about">
+      <div>
+        <h2>About</h2>
+        <p class="muted">
+          Saya web developer yang fokus pada kualitas eksekusi: clean architecture,
+          UI yang modern, dan performance yang siap production.
+        </p>
+        <div class="stack">
+          <span class="pill">HTML/CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">React / Next.js</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">REST / GraphQL</span>
+          <span class="pill">CI/CD</span>
+        </div>
+      </div>
+      <div class="card about-card">
+        <h3>Process</h3>
+        <ol class="process">
+          <li><b>Discover</b> — goals, audience, constraints.</li>
+          <li><b>Design</b> — wireframe → UI direction.</li>
+          <li><b>Build</b> — implement, test, optimize.</li>
+          <li><b>Iterate</b> — analytics-driven improvements.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Let’s build something</h2>
+        <p>Kalau kamu punya brief, kirim detailnya. Saya balas dengan plan dan estimasi.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Contact</h3>
+          <p class="muted">Email</p>
+          <p><a class="link" href="mailto:you@email.com">you@email.com</a></p>
+          <p class="muted">Links</p>
+          <p>
+            <a class="link" href="#" target="_blank" rel="noopener">GitHub ↗</a><br/>
+            <a class="link" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </p>
+        </div>
+
+        <form class="card form" onsubmit="return handleSubmit(event)">
+          <label>
+            Nama
+            <input required name="name" placeholder="Nama kamu" />
+          </label>
+          <label>
+            Email
+            <input required type="email" name="email" placeholder="nama@email.com" />
+          </label>
+          <label>
+            Pesan
+            <textarea required name="message" rows="5" placeholder="Ceritakan kebutuhanmu..."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send</button>
+          <p class="muted small" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot">
+      <span>© <span id="year"></span> Nama Kamu</span>
+      <span class="muted">Built for speed • shipped with care</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
