@@ -189,7 +189,8 @@ h1{
 .metric{
   border: 1px solid rgba(255,255,255,.10);
   background: rgba(255,255,255,.035);
-  backdrop-filter: blur(6px);
+  
+  backdrop-filter: blur(3px);
 }
 
 .metric-num{font-size:22px; font-weight:750}
