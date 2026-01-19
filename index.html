@@ -1,244 +1,402 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nama Kamu — Web Developer Portfolio</title>
-  <meta name="description" content="Portfolio web developer: proyek, layanan, dan cara kerja."/>
+  <title>Umar Faiz Rahman — Academic Profile</title>
+  <meta name="description" content="Academic profile of Umar Faiz Rahman: projects, awards, experience, and skills." />
+  <meta name="theme-color" content="#070812" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <!-- NAV -->
   <header class="nav-wrap">
-    <nav class="nav">
-      <a class="brand" href="#home">NamaKamu<span class="dot">.</span></a>
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="Go to top">Umar<span class="dot">.</span></a>
 
-      <button class="nav-toggle" aria-label="Toggle Menu" aria-expanded="false">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
       <ul class="nav-links" data-nav>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li class="cta-li"><a class="btn btn-primary" href="#contact">Let’s Talk</a></li>
+        <li class="cta-li">
+          <a class="btn btn-primary" href="assets/CV-Umar-Faiz-Rahman.pdf" target="_blank" rel="noopener">
+            Download CV
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <!-- HERO -->
-  <main id="home" class="hero">
-    <!-- Background animasi: ganti sesuai file kamu -->
+  <main id="top" class="hero">
     <div class="hero-bg" aria-hidden="true">
-      <img 
-        src="assets/hero-bg.gif" 
-        alt="" 
-        class="hero-gif" 
-        aria-hidden="true"
-       />
-
+      <img src="assets/hero-bg.gif" alt="" class="hero-gif" />
       <div class="hero-overlay"></div>
     </div>
 
-    <section class="hero-content">
-      <p class="kicker">Web Developer • UI Engineer • Performance-minded</p>
-      <h1>
-        Bangun website yang <span class="grad">cepat</span>, <span class="grad">rapi</span>,
-        dan siap scale.
-      </h1>
-      <p class="sub">
-        Saya membantu bisnis dan personal brand mengubah ide jadi produk web modern:
-        clean UI, high performance, dan user experience yang “klik”.
-      </p>
+    <section class="hero-content container">
+      <div class="hero-grid">
+        <!-- Left: text -->
+        <div class="hero-left">
+          <p class="kicker">Information Systems • Universitas Indonesia</p>
 
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#work">View Work</a>
-        <a class="btn btn-ghost" href="assets/CV-NamaKamu.pdf" target="_blank" rel="noopener">Download CV</a>
+          <h1>Umar Faiz Rahman</h1>
+
+          <p class="hero-title">
+            Building tech projects with a product mindset — combining software development,
+            leadership, and social impact.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="assets/CV-Umar-Faiz-Rahman.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn btn-ghost" href="#projects">View Projects</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric">
+              <div class="metric-num">95</div>
+              <div class="metric-label">SUS (Dione AI)</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num">2nd</div>
+              <div class="metric-label">Samsung SFT 2024</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num">UI</div>
+              <div class="metric-label">Fasilkom</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: avatar -->
+        <div class="hero-right">
+          <div class="avatar-card">
+            <img src="assets/avatar.jpg" alt="Umar Faiz Rahman" class="avatar" />
+            <div class="avatar-meta">
+              <div class="avatar-name">Umar Faiz Rahman</div>
+              <div class="avatar-sub muted">Academic Profile • Projects • Awards</div>
+            </div>
+          </div>
+
+          <div class="quick-links card">
+            <div class="quick-title">Quick Links</div>
+            <div class="quick-items">
+              <a class="link" href="mailto:umarfr.network@gmail.com">umarfr.network@gmail.com</a>
+              <a class="link" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+              <a class="link" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+            <p class="muted small" style="margin:10px 0 0;">
+              This site is a curated summary. Full details are available in the PDF CV.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div class="hero-metrics">
-        <div class="metric">
-          <div class="metric-num">10+</div>
-          <div class="metric-label">Projects shipped</div>
-        </div>
-        <div class="metric">
-          <div class="metric-num">90+</div>
-          <div class="metric-label">Lighthouse score</div>
-        </div>
-        <div class="metric">
-          <div class="metric-num">2–6x</div>
-          <div class="metric-label">Faster load (typical)</div>
-        </div>
-      </div>
+      <a class="scroll-hint" href="#profile" aria-label="Scroll to profile">Scroll</a>
     </section>
-
-    <a class="scroll-hint" href="#work" aria-label="Scroll to work">Scroll</a>
   </main>
 
-  <!-- WORK -->
-  <section id="work" class="section">
+  <!-- PROFILE -->
+  <section id="profile" class="section">
     <div class="container">
       <div class="section-head">
-        <h2>Selected Work</h2>
-        <p>Case study ringkas: impact, kontribusi, dan stack.</p>
+        <h2>Profile</h2>
+        <p>Short, curated summary (not a duplicate of the PDF).</p>
       </div>
 
-      <div class="grid work-grid">
+      <div class="grid two-col">
         <article class="card">
-          <div class="card-top">
-            <h3>Project A — Landing Page High Conversion</h3>
-            <p class="muted">Role: Full-stack • Stack: Next.js, Tailwind, Vercel</p>
-          </div>
-          <ul class="bullets">
-            <li>Improve performance & SEO (Core Web Vitals ready).</li>
-            <li>Conversion-focused layout + analytics events.</li>
-            <li>CMS-ready untuk scaling konten.</li>
-          </ul>
-          <div class="card-actions">
-            <a class="link" href="#" target="_blank" rel="noopener">Live ↗</a>
-            <a class="link" href="#" target="_blank" rel="noopener">Case Study ↗</a>
-          </div>
+          <p class="lead">
+            I’m an Information Systems student at Universitas Indonesia with interests in
+            product management, project coordination, and software development.
+          </p>
+          <p class="muted">
+            I enjoy working on projects that connect real user problems with practical implementation —
+            from prototyping and system integration to usability and delivery.
+          </p>
         </article>
 
         <article class="card">
-          <div class="card-top">
-            <h3>Project B — Dashboard Internal Tools</h3>
-            <p class="muted">Role: Frontend • Stack: React, Charting, REST API</p>
-          </div>
+          <h3>What I bring</h3>
           <ul class="bullets">
-            <li>Design system mini untuk konsistensi UI.</li>
-            <li>State management yang predictable.</li>
-            <li>Performance tuning untuk data besar.</li>
+            <li><b>Product thinking</b> — clarity of problem, scope, and outcomes.</li>
+            <li><b>Execution</b> — shipping prototypes and integrating systems end-to-end.</li>
+            <li><b>Leadership</b> — teamwork, ownership, and structured communication.</li>
           </ul>
-          <div class="card-actions">
-            <a class="link" href="#" target="_blank" rel="noopener">Demo ↗</a>
-            <a class="link" href="#" target="_blank" rel="noopener">Repo ↗</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <h3>Project C — Company Profile + CMS</h3>
-            <p class="muted">Role: Full-stack • Stack: Astro/Next, Headless CMS</p>
-          </div>
-          <ul class="bullets">
-            <li>Editor-friendly content workflow.</li>
-            <li>SEO + schema markup.</li>
-            <li>Deploy pipeline yang rapi.</li>
-          </ul>
-          <div class="card-actions">
-            <a class="link" href="#" target="_blank" rel="noopener">Live ↗</a>
-            <a class="link" href="#" target="_blank" rel="noopener">Details ↗</a>
-          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section id="services" class="section section-alt">
+  <!-- HIGHLIGHTS -->
+  <section id="highlights" class="section section-alt">
     <div class="container">
       <div class="section-head">
-        <h2>Services</h2>
-        <p>End-to-end delivery: dari discovery sampai launch dan iterasi.</p>
+        <h2>Highlights</h2>
+        <p>Key milestones worth scanning in under 20 seconds.</p>
       </div>
 
-      <div class="grid service-grid">
+      <div class="grid highlights-grid">
         <div class="card">
-          <h3>Web Development</h3>
-          <p class="muted">Landing page, company profile, web app.</p>
-          <p>Arsitektur rapi, reusable components, dan maintainable codebase.</p>
+          <h3>Flagship Project</h3>
+          <p class="muted">Dione AI — AI + IoT learning system (Project Lead)</p>
+          <p>Automated attendance, monitoring, and summarization. Usability validated with <b>95 SUS</b>.</p>
         </div>
+
         <div class="card">
-          <h3>UI Engineering</h3>
-          <p class="muted">Design-to-code pixel-precise.</p>
-          <p>Design system ringan, konsistensi, dan pengalaman pengguna yang mulus.</p>
+          <h3>Awards</h3>
+          <p>🥈 2nd Winner <b>Samsung Solve for Tomorrow 2024</b>.</p>
+          <p class="muted">Additional achievements listed below.</p>
         </div>
+
         <div class="card">
-          <h3>Performance & SEO Tech</h3>
-          <p class="muted">Fast load, measurable results.</p>
-          <p>Core Web Vitals, best practices, dan tracking untuk continuous improvement.</p>
+          <h3>Leadership</h3>
+          <p>Student org experience across research & development and program coordination.</p>
+          <p class="muted">Focused on collaboration, ownership, and delivery.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container about">
-      <div>
-        <h2>About</h2>
-        <p class="muted">
-          Saya web developer yang fokus pada kualitas eksekusi: clean architecture,
-          UI yang modern, dan performance yang siap production.
-        </p>
-        <div class="stack">
-          <span class="pill">HTML/CSS</span>
-          <span class="pill">JavaScript</span>
-          <span class="pill">React / Next.js</span>
-          <span class="pill">Node.js</span>
-          <span class="pill">REST / GraphQL</span>
-          <span class="pill">CI/CD</span>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Selected projects with impact + role. Full detail is in the CV.</p>
+      </div>
+
+      <div class="grid project-grid">
+        <article class="card project-card">
+          <div class="project-top">
+            <h3>Dione AI — AI-Powered Learning System</h3>
+            <p class="muted">Role: Project Lead • AI + IoT + Web Integration</p>
+          </div>
+
+          <div class="project-tags">
+            <span class="pill">GPT-4 API</span>
+            <span class="pill">ESP32-CAM</span>
+            <span class="pill">Arduino</span>
+            <span class="pill">Flask</span>
+            <span class="pill">HTML/CSS</span>
+            <span class="pill">JavaScript</span>
+          </div>
+
+          <ul class="bullets">
+            <li>Built an integrated platform for classroom learning support.</li>
+            <li>Automated attendance pipeline (device → web → spreadsheet).</li>
+            <li>Added real-time monitoring and AI summarization for learning efficiency.</li>
+            <li>Validated usability with <b>95 SUS score</b> as proof of user-centered delivery.</li>
+            <li>Positioned as a <b>social impact</b> solution for schools in Batam.</li>
+          </ul>
+
+          <div class="card-actions">
+            <a class="link" href="#contact">Request details ↗</a>
+            <a class="link" href="assets/CV-Umar-Faiz-Rahman.pdf" target="_blank" rel="noopener">See full CV ↗</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Other Projects</h3>
+          <p class="muted">Curated list kept short for clarity.</p>
+          <ul class="bullets">
+            <li>3D Game project: <b>“John Lemon Escape”</b> (bootcamp).</li>
+            <li>Prototype & experimentation with IoT-based data acquisition.</li>
+            <li>Additional work: prototypes and coursework (details in PDF).</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Awards & Achievements</h2>
+        <p>High-signal achievements relevant for academic and organizational applications.</p>
+      </div>
+
+      <div class="grid awards-grid">
+        <div class="card">
+          <h3>Key Awards</h3>
+          <ul class="bullets">
+            <li><b>2nd Winner</b> — Samsung Solve for Tomorrow 2024.</li>
+            <li><b>Honorable Mention</b> — STEM Young Researcher (IPB University), 2024.</li>
+            <li><b>JMUN 2023</b> — Luxembourg Delegation (International).</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Competitions</h3>
+          <ul class="bullets">
+            <li>Participant — National Science Olympiad in Informatics (OSN-P), 2024.</li>
+            <li>Participant — National Science Olympiad in Informatics (OSN-K), 2023.</li>
+            <li>Outstanding Participant — P5 Engineering & Technology, 2024.</li>
+          </ul>
         </div>
       </div>
-      <div class="card about-card">
-        <h3>Process</h3>
-        <ol class="process">
-          <li><b>Discover</b> — goals, audience, constraints.</li>
-          <li><b>Design</b> — wireframe → UI direction.</li>
-          <li><b>Build</b> — implement, test, optimize.</li>
-          <li><b>Iterate</b> — analytics-driven improvements.</li>
-        </ol>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Roles that demonstrate teamwork, responsibility, and structured delivery.</p>
+      </div>
+
+      <div class="grid exp-grid">
+        <article class="card">
+          <h3>Back-End Web Development</h3>
+          <p class="muted">School of BEM Fasilkom UI • 2025 – Present</p>
+          <p>Learning and contributing to backend fundamentals and collaborative engineering workflow.</p>
+        </article>
+
+        <article class="card">
+          <h3>Project Management Class Member</h3>
+          <p class="muted">Pekan Ristek, Fasilkom UI • 2025 – Present</p>
+          <p>Practicing project planning, teamwork, and execution discipline in structured settings.</p>
+        </article>
+
+        <article class="card">
+          <h3>Student Council (OSIS) — R&D Department</h3>
+          <p class="muted">MAN Insan Cendekia Batam • 2023 – 2024</p>
+          <ul class="bullets">
+            <li>Supported planning and evaluation of student programs.</li>
+            <li>Led “Tutor Sebaya” initiative as Head Divisor.</li>
+            <li>Collaborated to support research and innovation activities.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>Grouped for readability. Full list in the CV.</p>
+      </div>
+
+      <div class="grid skills-grid">
+        <div class="card">
+          <h3>Programming</h3>
+          <div class="stack">
+            <span class="pill">Python</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">C / C++</span>
+            <span class="pill">C#</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Web & Frameworks</h3>
+          <div class="stack">
+            <span class="pill">HTML/CSS</span>
+            <span class="pill">Flask</span>
+            <span class="pill">Django</span>
+            <span class="pill">Django REST</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Tools</h3>
+          <div class="stack">
+            <span class="pill">Git</span>
+            <span class="pill">Figma</span>
+            <span class="pill">Arduino</span>
+            <span class="pill">Postman</span>
+            <span class="pill">PowerPoint / Excel</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Strengths</h3>
+          <div class="stack">
+            <span class="pill">Leadership</span>
+            <span class="pill">Communication</span>
+            <span class="pill">Teamwork</span>
+            <span class="pill">Problem Solving</span>
+            <span class="pill">Time Management</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section section-alt">
+  <section id="contact" class="section">
     <div class="container">
       <div class="section-head">
-        <h2>Let’s build something</h2>
-        <p>Kalau kamu punya brief, kirim detailnya. Saya balas dengan plan dan estimasi.</p>
+        <h2>Contact</h2>
+        <p>Best way to reach me is email. Links are provided for quick verification.</p>
       </div>
 
-      <div class="contact-grid">
+      <div class="grid contact-grid">
         <div class="card">
-          <h3>Contact</h3>
+          <h3>Direct</h3>
           <p class="muted">Email</p>
-          <p><a class="link" href="mailto:you@email.com">you@email.com</a></p>
-          <p class="muted">Links</p>
+          <p><a class="link" href="mailto:umarfr.network@gmail.com">umarfr.network@gmail.com</a></p>
+
+          <p class="muted" style="margin-top:14px;">Links</p>
           <p>
-            <a class="link" href="#" target="_blank" rel="noopener">GitHub ↗</a><br/>
-            <a class="link" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a class="link" href="#" target="_blank" rel="noopener">LinkedIn ↗</a><br/>
+            <a class="link" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
           </p>
+
+          <p class="muted small" style="margin-top:14px;">
+            Prefer a quick overview? Download the PDF CV for full details.
+          </p>
+
+          <a class="btn btn-primary" href="assets/CV-Umar-Faiz-Rahman.pdf" target="_blank" rel="noopener" style="margin-top:12px;">
+            Download CV
+          </a>
         </div>
 
-        <form class="card form" onsubmit="return handleSubmit(event)">
-          <label>
-            Nama
-            <input required name="name" placeholder="Nama kamu" />
-          </label>
-          <label>
-            Email
-            <input required type="email" name="email" placeholder="nama@email.com" />
-          </label>
-          <label>
-            Pesan
-            <textarea required name="message" rows="5" placeholder="Ceritakan kebutuhanmu..."></textarea>
-          </label>
-          <button class="btn btn-primary" type="submit">Send</button>
-          <p class="muted small" id="formNote"></p>
-        </form>
+        <div class="card form">
+          <h3>Message (optional)</h3>
+          <p class="muted">This form is a demo. You can connect it to Formspree / Netlify Forms later.</p>
+
+          <form onsubmit="return handleSubmit(event)">
+            <label>
+              Name
+              <input required name="name" placeholder="Your name" />
+            </label>
+
+            <label>
+              Email
+              <input required type="email" name="email" placeholder="you@email.com" />
+            </label>
+
+            <label>
+              Message
+              <textarea required name="message" rows="5" placeholder="Write a short message..."></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Send</button>
+            <p class="muted small" id="formNote"></p>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container foot">
-      <span>© <span id="year"></span> Nama Kamu</span>
-      <span class="muted">Built for speed • shipped with care</span>
+      <span>© <span id="year"></span> Umar Faiz Rahman</span>
+      <span class="muted">Academic Profile • Projects • Leadership</span>
     </div>
   </footer>
 
